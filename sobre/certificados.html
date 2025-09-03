@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificados | Eduardo Nazario</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+    /* efeito pulsante */
+    @keyframes pulse-shadow {
+      0%   { box-shadow: 0 4px 10px rgba(59,130,246,0.30); }
+      50%  { box-shadow: 0 6px 20px rgba(59,130,246,0.60); }
+      100% { box-shadow: 0 4px 10px rgba(59,130,246,0.30); }
+    }
+    .animated-shadow {
+      animation: pulse-shadow 4s ease-in-out infinite;
+      transition: box-shadow .3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-white min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-100 py-6 px-10">
+    <div class="flex justify-center items-center space-x-12">
+      <a href="/feed/" class="text-5xl font-bold text-[#3e82b8] font-[Montserrat]">EN</a>
+      <ul class="flex items-center space-x-10 text-gray-700 font-medium text-lg">
+        <li><a href="/feed/" class="hover:text-blue-700 transition-colors">HOME</a></li>
+        <li><a href="/portfolio/" class="hover:text-blue-700 transition-colors">PORTFOLIO</a></li>
+         <!-- Submenu clicável -->
+  <li class="relative">
+    <details class="group">
+      <summary class="flex items-center gap-1 cursor-pointer hover:text-blue-700 transition-colors duration-300 list-none">
+        SOBRE MIM
+        <svg class="ml-1 w-4 h-4 text-gray-700 group-open:rotate-180 transition-transform duration-300" 
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </summary>
+      <ul class="absolute left-1/2 -translate-x-1/2 mt-3 bg-white border border-gray-200 rounded-xl shadow-lg py-2 w-48 z-50">
+        <li>
+          <a href="/sobre/index.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-t-xl">
+            Pessoal
+          </a>
+        </li>
+          <a href="/sobre/certificados.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-b-xl">
+            Certificados
+          </a>
+        </li>
+      </ul>
+    </details>
+  </li>
+        <li><a href="/feed/#contato" class="hover:text-blue-700 transition-colors">CONTATO</a></li>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center mt-10 mb-8 px-6">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#3e82b8] font-[Montserrat]">Certificados</h1>
+    <p class="text-gray-600 mt-3">Minha trilha de estudos e cursos concluídos.</p>
+  </header>
+
+  <!-- Grid de Certificados -->
+  <main class="max-w-6xl mx-auto px-6 pb-20 w-full">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <article class="p-5 rounded-xl bg-blue-50 border border-blue-100 animated-shadow hover:-translate-y-2 transform transition">
+        <div class="flex items-start justify-between">
+          <h3 class="text-lg font-bold text-gray-800 leading-snug">Aprenda a programar em JavaScript com foco no back-end</h3>
+          <a href="https://cursos.alura.com.br/degree/certificate/61fc1b44-5979-4c88-8020-42c8cfb97487?lang" target="_blank" class="text-gray-500 hover:text-blue-700" aria-label="Ver certificado">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M14 10V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m0 0a2 2 0 002 2h4"/>
+            </svg>
+          </a>
+        </div>
+        <div class="mt-4 flex items-center gap-4 text-sm text-gray-600">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9-5 9 5-9 5-9-5zm0 0v6a9 9 0 0018 0v-6"/></svg>
+            Alura
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            44h
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="p-5 rounded-xl bg-blue-50 border border-blue-100 animated-shadow hover:-translate-y-2 transform transition">
+        <div class="flex items-start justify-between">
+          <h3 class="text-lg font-bold text-gray-800 leading-snug">NumPy: análise numérica eficiente com Python</h3>
+          <a href="https://cursos.alura.com.br/certificate/08b5bd45-8b6c-4cf9-a727-0030de839d22?lang" target="_blank" class="text-gray-500 hover:text-blue-700" aria-label="Ver certificado">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M14 10V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m0 0a2 2 0 002 2h4"/>
+            </svg>
+          </a>
+        </div>
+        <div class="mt-4 flex items-center gap-4 text-sm text-gray-600">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9-5 9 5-9 5-9-5zm0 0v6a9 9 0 0018 0v-6"/></svg>
+            Alura
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            08h
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="p-5 rounded-xl bg-blue-50 border border-blue-100 animated-shadow hover:-translate-y-2 transform transition">
+        <div class="flex items-start justify-between">
+          <h3 class="text-lg font-bold text-gray-800 leading-snug">Python para Data Science: trabalhando com funções, estruturas de dados e exceções</h3>
+          <a href="https://cursos.alura.com.br/certificate/1dae6aa6-b8aa-4058-b645-31120ad0785f?lang" target="_blank" class="text-gray-500 hover:text-blue-700" aria-label="Ver certificado">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M14 10V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m0 0a2 2 0 002 2h4"/>
+            </svg>
+          </a>
+        </div>
+        <div class="mt-4 flex items-center gap-4 text-sm text-gray-600">
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9-5 9 5-9 5-9-5zm0 0v6a9 9 0 0018 0v-6"/></svg>
+            Alura
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            08h
+          </span>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center text-gray-500 py-8">
+    © <span id="year"></span> Eduardo Nazario
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

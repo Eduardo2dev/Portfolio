@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Eduardo Nazario</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Sombra pulsante igual ao seu site */
+    @keyframes pulse-shadow {
+      0%   { box-shadow: 0 4px 10px rgba(59,130,246,0.30); }
+      50%  { box-shadow: 0 6px 20px rgba(59,130,246,0.60); }
+      100% { box-shadow: 0 4px 10px rgba(59,130,246,0.30); }
+    }
+    .animated-shadow { animation: pulse-shadow 4s ease-in-out infinite; transition: box-shadow .3s ease; }
+  </style>
+</head>
+
+<body class="font-inter bg-gradient-to-b from-blue-100 to-white min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-100 py-6 px-10">
+    <div class="flex justify-center items-center space-x-12">
+      <a href="/feed/" class="text-5xl font-bold text-[#3e82b8] font-[Montserrat]">EN</a>
+      <ul class="flex items-center space-x-10 text-gray-700 font-medium text-lg">
+        <li><a href="/feed/" class="hover:text-blue-700 transition-colors duration-300">HOME</a></li>
+        <li><a href="/portfolio/" class="hover:text-blue-700 transition-colors duration-300 font-bold">PORTFOLIO</a></li>
+          
+  <!-- Submenu clicável -->
+  <li class="relative">
+    <details class="group">
+      <summary class="flex items-center gap-1 cursor-pointer hover:text-blue-700 transition-colors duration-300 list-none">
+        SOBRE MIM
+        <svg class="ml-1 w-4 h-4 text-gray-700 group-open:rotate-180 transition-transform duration-300" 
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </summary>
+      <ul class="absolute left-1/2 -translate-x-1/2 mt-3 bg-white border border-gray-200 rounded-xl shadow-lg py-2 w-48 z-50">
+        <li>
+          <a href="/sobre/index.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-t-xl">
+            Pessoal
+          </a>
+        </li>
+          <a href="/sobre/certificados.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-b-xl">
+            Certificados
+          </a>
+        </li>
+      </ul>
+    </details>
+  </li>
+  <li><a href="/feed/#contato" class="hover:text-blue-700 transition-colors duration-300">CONTATO</a></li>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header class="py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#3e82b8] font-[Montserrat]">Meu Portfólio</h1>
+    <p class="text-gray-700 mt-4">Alguns projetos recentes e em andamento.</p>
+  </header>
+
+  <!-- Grid de Projetos -->
+  <main class="max-w-6xl mx-auto px-6 pb-20">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card de Projeto -->
+      <article class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition transform hover:-translate-y-2 animated-shadow">
+        <h3 class="text-xl font-bold text-[#3e82b8] mb-2">Projeto 1</h3>
+        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas tecnologias.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">Ver Projeto →</a>
+        </div>
+      </article>
+
+      <article class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition transform hover:-translate-y-2 animated-shadow">
+        <h3 class="text-xl font-bold text-[#3e82b8] mb-2">Projeto 2</h3>
+        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas tecnologias.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">Ver Projeto →</a>
+        </div>
+      </article>
+
+      <article class="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition transform hover:-translate-y-2 animated-shadow">
+        <h3 class="text-xl font-bold text-[#3e82b8] mb-2">Projeto 3</h3>
+        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas tecnologias.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">Ver Projeto →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Rodapé simples -->
+  <footer class="text-center text-gray-500 py-8">
+    © <span id="year"></span> Eduardo Nazario
+  </footer>
+
+  <script>
+    // ano automático no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
