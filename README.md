@@ -47,9 +47,7 @@ O site está hospedado na **Vercel** e serve como minha vitrine profissional par
 
 ## 🔗 Acesse o Projeto
 
-➡️ [**Portfólio Online (Vercel)**](https://seuusuario.vercel.app/)  
-
-*(troque `seuusuario` pelo subdomínio que o Vercel gerar no deploy)*
+➡️ [**Portfólio Online (Vercel)**](https://eduardoportfolio-three.vercel.app/)  
 
 ---
 
